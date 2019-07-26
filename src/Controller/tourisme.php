@@ -7,10 +7,22 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class tourisme extends AbstractController
+
 {
 
     /**
-     * @Route("/tourisme")
+     * @Route("/")
+     */
+
+    public function redirection(){
+
+
+        return $this->redirectToRoute('tourisme');
+        
+    }
+
+    /**
+     * @Route("/tourisme" , name="tourisme")
      */
 
     public function principal()
@@ -20,4 +32,6 @@ class tourisme extends AbstractController
 
 
      }
+
+    
 }
