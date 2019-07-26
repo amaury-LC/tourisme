@@ -64,3 +64,11 @@
     background-size: cover;
     /* Resize the background image to cover the entire container */
 }
+
+#plage_liste {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
