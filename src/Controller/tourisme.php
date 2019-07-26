@@ -14,11 +14,11 @@ class tourisme extends AbstractController
      * @Route("/")
      */
 
-    public function redirection(){
+    public function redirection()
+    {
 
 
         return $this->redirectToRoute('tourisme');
-        
     }
 
     /**
@@ -29,9 +29,16 @@ class tourisme extends AbstractController
     {
 
         return $this->render('tourisme/tourisme.html.twig',);
+    }
 
 
-     }
+    /**
+     * @Route("tourisme/plage" , name="plage" )
+     */
 
-    
+    public function plage()
+    {
+
+        return $this->render('tourisme/plage.html.twig',);
+    }
 }
